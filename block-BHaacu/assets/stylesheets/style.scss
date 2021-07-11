@@ -1,0 +1,375 @@
+@import "vars";
+@import "reset";
+@import "general";
+@import "flexPercentage";
+@import "flex";
+@import "home";
+@import "about";
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto; 
+    width:100%; 
+    border: 2px solid red;
+}
+
+
+// button 
+.btn{
+    font-size: 16px;
+    padding: 12px 18px;
+    font-size: 12px;
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+    display: inline-block;
+    background-color: #FD656B;
+    border-radius: 50px;
+    margin-right: 55px;
+}
+/* header-ribbon */
+.header-ribbon{
+    width: 100%;
+    background-color: $tertiary;
+    padding: 10px 0;
+}
+address{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: $primary;
+}
+.message{
+    margin-right: 360px;
+}
+.message a {
+    color: $primary;
+    text-decoration: none;
+}
+.social-media a{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    color: $primary;
+}
+/* Header */
+.heading{
+    background-color: $secondary;
+}
+active{
+    color:#DC3C45;
+}
+.nav-bar{
+    margin-left: 480px;
+    // margin-right: -5px;
+    padding: 24px 0;
+    vertical-align: middle;
+}
+.nav-bar a:hover{
+    color: $primary;
+    padding: 25px 10px;
+    background-color: #EB5F61;
+}
+.nav-bar li a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform:capitalize;
+    margin-left: 30px;
+    color: #012D5B;
+}
+// HERO SECTION
+.hero{
+    background: url(../media/banner-1.jpg) center center no-repeat;
+    background-size: cover;
+    height: 90vh;
+    margin-top: 3px;
+}
+.hero-content{
+    width: 39%;
+    margin-top: 250px;
+    margin-right: 20px;
+}
+.hero-content h1{
+    text-align: left;
+}
+.hero-text{
+    margin:20px 0;
+    font-weight: 700;
+}
+
+// Services Section
+.services{
+    background-color: $primary;
+    text-align: center;
+}
+.article{
+    border: 2px solid #E6E9EC;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 60px;
+}
+.article img{
+    width: 100px;
+}
+.services-btn{
+    margin: 0 auto;
+    background-color: $primary;
+    color: $tertiary;
+    border: 1px solid #DC3C45;
+}
+// Solution Section
+.solution{
+    background-color: #F8F9FA;
+    text-align: center;
+}
+.solution p{
+    width: 58%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+// Consulting Section
+.consulting{
+    background-color: $primary;
+}
+.consulting-content{
+    width: 40%;
+    text-align: center;
+    margin-left: 40px;
+}
+.consulting-content h2{
+    line-height: 1.5;
+}
+.consulting-content p{
+    margin-bottom: 10px;
+}
+.consulting-content img{
+   width:100%;
+}
+.article-img img{
+    width: 70px;
+    margin-bottom: 10px;
+}
+// Request Section
+.request{
+    background-color: $tertiary;
+    padding: 40px;
+    // line-height: 0.1;
+}
+.request-content h3{
+    color: $primary;
+    font-size: 20px;
+    text-transform: none;
+}
+.request-content p{
+   margin-bottom: 10px;
+   color: $primary;
+   font-size: 12px;
+   margin: 12px 0;
+}
+.request-btn{
+    background-color: #DC3C45;
+    color: $primary;
+    text-transform: capitalize;
+    border: 1px solid white;
+}
+// Industry Section
+.industry-content{
+    width: 40%;
+}
+.industry-content img{
+  width: 100%;
+}
+.industry-content h2{
+    line-height: 1.5;
+}
+.industry-content p{
+    color: #7D868D;
+}
+// Client Section
+.client{
+    background-color: $secondary;
+    text-align: center;
+}
+.client h2{
+    margin-bottom: 40px;
+    font-weight: larger;
+}
+.client-content img{
+   color: #BDBEBE;
+   width: 12%;
+   filter: grayscale(50);
+}
+// Footer section
+.footer{
+    background-color: #343A40;
+}
+.footer-content h3{
+    color: #7D8083;
+    margin-bottom: 20px;
+}
+.footer-content address {
+    color: #9E9FA0;
+}
+address span{
+    margin-bottom: 30px;
+}
+.footer-content a{
+    color: #9E9FA0;
+}
+.footer-first-item i{
+    margin-bottom: 40px;
+}
+.footer-item li{
+    margin-bottom: 20px;
+}
+.footer-social-link li{
+margin-left: -6px;
+margin-right: -8px;
+}
+
+// ABOUT HTML SECTION 
+.hero-about{
+    text-align: center;
+    padding: 50px;
+    background-color: $tertiary;
+}
+.hero-about h2,p {
+    color: $primary;
+    // line-height: 0.6;
+}
+.hero-about-text{
+    line-height: 0.1;
+    font-size: 13px;
+}
+// ABOUT US SECTION
+.aboutUs h5{
+   color: $tertiary; 
+   text-transform: capitalize;
+   margin-bottom: 10px;
+}
+.aboutUs-content{
+    width: 40%;
+}
+.aboutUs-content img{
+  width: 80%;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+.aboutUs-content h2{
+    line-height: 1.5;
+}
+.aboutUs-content p{
+    color: #7D868D;
+}
+
+// <!-- MISSION SECTION -->
+
+.mission-content img{
+  width: 35%;
+}
+.mission-item{
+    margin-left: 40px;
+    
+}
+.mission-article{
+    margin-bottom: 25px;
+}
+.mission-item i{
+    font-size: 35px;
+}
+.mission-para h5{
+
+   line-height: 0;
+   font-weight: 900;
+}
+.mission-para{
+    margin-left: 35px;
+}
+.mission-para p{
+    color: $accent;
+    line-height: 1.8;
+
+}
+
+
+// TEAM SECTION 
+.team{
+    background-color: $secondary;
+    text-align: center;
+}
+.team p{
+    color: $accent;
+}
+.team-img img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.team-text{
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 10%);
+    background-color:#FFFFFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.team-text h4{
+    font-weight: 700;
+    margin-top: 20px;
+}
+.team-text p{
+    color: #EB5F61;
+    line-height: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+// SOLUTION SECTION
+.solution p{
+    color: $accent;
+}
+
+
+// CONTACT HTML SECTION
+.contact{
+    background-color: $secondary;
+    text-align: center;
+}
+.contact-para{
+    width: 60%;
+    margin: 0 auto;
+    color: $accent;
+    line-height: 1.7;
+    margin-bottom: 100px;
+}
+.circle{
+    color: #EB5F61;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(238, 234, 234);
+    border-radius: 50%;
+}
+.circle i{
+    font-size: 24px;
+}
+.contact-item p{
+  color: $accent;
+}
+// FORM SECTION
+.form{
+    text-align: center;
+}
+.form-para{
+    color: $accent;
+}
+
+
