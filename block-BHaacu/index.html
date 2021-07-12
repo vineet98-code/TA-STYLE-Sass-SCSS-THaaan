@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- fonts family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- fonts awesome -->
@@ -15,17 +18,17 @@
 </head>
 <body>
 <header class="header-ribbon">
-        <div class="container flex justify-between">
-              <address>
+        <div class="container flex justify-between sm-wrap sm-flex ">
+              <address class="">
                 <i class="fas fa-phone"></i>
-                  +1-1245-678-980
+                  <span>+1-1245-678-980</span>
               </address>
-              <address class="message">
+              <address class="message ">
                   <i class="far fa-envelope"></i>
                   <a href="#">info@consulting.com</a>
               </address>
-              <nav>
-              <ul class="flex">
+              <nav class="sm-wrap">
+              <ul class="flex ">
                 <li class="social-media">
                   <a href="#">
                     <i class="fab fa-linkedin-in"></i>
@@ -52,18 +55,43 @@
 </header>
 <!-- HEADING SECTION -->
 <section class="heading">
-    <div class="container flex justify-between item-center">
+    <div class="container flex justify-between item-center sm-wrap">
        <div class="brand">
           <h2><active>uni</active>Tech</h2>
        </div>
+
+       <label class="bars" for="toggle">
+        <i class="fas fa-bars"></i>
+       </label>
+       <input id="toggle" type="checkbox"/>
+
        <nav class="nav-bar">
-         <ul class="flex">
-           <li><a href="index.html">home</a></li>
-           <li><a href="about.html">about Us</a></li>
-           <li><a href="service.html">Services</a></li>
-           <li><a href="cases.html">cases</a></li>
-           <li><a href="blog.html">blog</a></li>
-           <li><a href="contact.html">contact Us</a></li>
+         <ul class="flex sm-column">
+           <li class="nav-item"><a href="index.html">home</a></li>
+           <li class="nav-item"><a href="about.html">about Us</a></li>
+           <li class="nav-item"><a href="service.html">Services</a></li>
+           <li class="nav-item"><a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+             
+             <div class="dropdown_menu">
+               <ul class="sm-column">
+                 <li><a href="pricing.html">Pricing</a></li>
+                 <li><a href="#">portfolio</a></li>
+                 <li><a href="error.html">404 page</a></li>
+               </ul>
+             </div>
+            </li>
+           <li class="nav-menu-item" ><a href="blog.html">blog <i class="fas fa-chevron-down"></i></a>
+             
+            <div class="dropdown_menu">
+              <ul>
+                <li class="nav-item"><a href="#">Blog</a></li>
+                <li class="nav-item"><a href="#">Blog single</a></li>
+                
+              </ul>
+            </div>
+
+           </li>
+           <li class="nav-menu-item" ><a href="contact.html">contact Us</a></li>
          </ul>
        </nav>
     </div> 
@@ -72,7 +100,7 @@
 <!-- HERO SECTION -->
 <section class="hero">
       <div class="container ">
-        <div class=" hero-content flex-25">
+        <div class=" hero-content flex-25 ">
             <h1>best buisness services</h1>
             <p class="hero-text">let grow your buisness together</p>
           <a class="btn hero-btn" href="#">quick call</a>
@@ -80,23 +108,23 @@
       </div>
 </section>
 <!-- SERVICES SECTION -->
-<section class="services container padding">
+<section class="services container padding sm-wrap">
   <h2>Our Services</h2>
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, mollitia.</p>
-  <div class="flex justify-between item-center">
-    <article class="article flex-30">
+  <div class="flex justify-between item-center sm-wrap">
+    <article class="article flex-30 sm-flex-100">
       <img src="assets/media/consulting.svg" alt="consulting">
       <h3>consulting</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quia corporis, harum repellat in possimus!</p>
       <a class ="btn services-btn" href="#">read more</a>
     </article>
-    <article class="article flex-30">
+    <article class="article flex-30 sm-flex-100">
       <img src="assets/media/finance.svg" alt="finance">
       <h3>finance</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quia corporis, harum repellat in possimus!</p>
       <a class ="btn services-btn"  href="#">read more</a>
     </article>
-    <article class="article flex-30">
+    <article class="article flex-30 sm-flex-100">
       <img src="assets/media/technology.svg" alt="technology">
       <h3>technology</h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quia corporis, harum repellat in possimus!</p>
@@ -105,21 +133,21 @@
   </div>
 </section>
 <!-- SOLUTION SECTION -->
-<section class="solution container padding">
+<section class="solution container padding sm-wrap">
   <h2>get all type of solution</h2>
   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium neque repudiandae dicta quidem, ratione quos perferendis molestiae id nobis omnis.</p>
   <a class ="btn services-btn"href="#">read more</a>
 </section>
 <!-- CONSULTING SECTION -->
-<section class="consulting   padding">
-  <div class="flex container justify-center item-center">
-    <article class=" article-img consulting-content">
+<section class="consulting   padding ">
+  <div class="flex container justify-center item-center sm-wrap">
+    <article class=" article-img consulting-content sm-flex-100 ">
       <img src="assets/media/technology.svg" alt="technology">
       <h2>we are top consulting firm in the world</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, doloremque.</p>
       <a class="btn services-btn"href="#">read more</a>
     </article>
-    <div class="consulting-content">
+    <div class="consulting-content sm-flex-100">
       <img src="assets/media/team.jpg" alt="team">
     </div>
   </div>
@@ -136,19 +164,19 @@
 </section>
 <!-- INDUSTRY Section -->
 <section class="industry padding">
-  <div class="container flex  item-center">
-    <div class="industry-content">
+  <div class="container flex  item-cente sm-wrap">
+    <div class="industry-content sm-flex-100 order-1">
       <h2>industry leader in consulting services</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quidem corporis minima repudiandae. Numquam quasi mollitia, quam nesciunt aut reprehenderit voluptate, dolorem quibusdam.</p>
     </div>
-     <div class="industry-content">
+     <div class="industry-content sm-flex-100">
        <img src="assets/media/img-woman-1.jpg" alt="img-woman-1">
      </div>
   </div>
 </section>
 <!-- CLIENT SECTION -->
 <section class="client padding">
-   <div class="container">
+   <div class="container sm-wrap">
      <h2>Our clients</h2>
      <div class=" client-content justify-evenly flex ">
       <img src="assets/media/spotify.png" alt="spotify">
